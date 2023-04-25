@@ -28,10 +28,10 @@ import (
 	"strings"
 
 	"github.com/coreos/etcd/grpc/internal"
+	"github.com/coreos/etcd/grpc/resolver"
 	"google.golang.org/grpc/connectivity"
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/metadata"
-	"google.golang.org/grpc/resolver"
 	"google.golang.org/grpc/serviceconfig"
 )
 
