@@ -32,10 +32,10 @@ import (
 	"sync"
 	"time"
 
+	"github.com/coreos/etcd/grpc/resolver"
 	"github.com/coreos/etcd/grpc/resolver/backoff"
 	"github.com/coreos/etcd/grpc/resolver/grpcrand"
 	"google.golang.org/grpc/grpclog"
-	"google.golang.org/grpc/resolver"
 )
 
 func init() {

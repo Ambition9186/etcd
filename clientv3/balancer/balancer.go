@@ -23,12 +23,12 @@ import (
 	"github.com/coreos/etcd/clientv3/balancer/connectivity"
 	"github.com/coreos/etcd/clientv3/balancer/picker"
 
+	"github.com/coreos/etcd/grpc/balancer"
+	"github.com/coreos/etcd/grpc/resolver"
+	_ "github.com/coreos/etcd/grpc/resolver/dns"         // register DNS resolver
+	_ "github.com/coreos/etcd/grpc/resolver/passthrough" // register passthrough resolver
 	"go.uber.org/zap"
-	"google.golang.org/grpc/balancer"
 	grpcconnectivity "google.golang.org/grpc/connectivity"
-	"google.golang.org/grpc/resolver"
-	_ "google.golang.org/grpc/resolver/dns"         // register DNS resolver
-	_ "google.golang.org/grpc/resolver/passthrough" // register passthrough resolver
 )
 
 // Config defines balancer configurations.
