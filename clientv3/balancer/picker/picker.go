@@ -17,9 +17,9 @@ package picker
 import (
 	"fmt"
 
+	"github.com/coreos/etcd/grpc/balancer"
+	"github.com/coreos/etcd/grpc/resolver"
 	"go.uber.org/zap"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/resolver"
 )
 
 // Picker defines balancer Picker methods.

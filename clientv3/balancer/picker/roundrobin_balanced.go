@@ -18,10 +18,10 @@ import (
 	"context"
 	"sync"
 
+	"github.com/coreos/etcd/grpc/balancer"
+	"github.com/coreos/etcd/grpc/resolver"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/resolver"
 )
 
 // newRoundrobinBalanced returns a new roundrobin balanced picker.
