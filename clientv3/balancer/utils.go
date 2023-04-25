@@ -21,8 +21,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"google.golang.org/grpc/balancer"
-	"google.golang.org/grpc/resolver"
+	"github.com/coreos/etcd/grpc/balancer"
+	"github.com/coreos/etcd/grpc/resolver"
 )
 
 func scToString(sc balancer.SubConn) string {
