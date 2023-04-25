@@ -21,8 +21,8 @@ import (
 
 	etcd "github.com/coreos/etcd/clientv3"
 
+	"github.com/coreos/etcd/grpc/naming"
 	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/naming"
 	"google.golang.org/grpc/status"
 )
 

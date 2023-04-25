@@ -21,7 +21,7 @@
 //		etcdnaming "github.com/coreos/etcd/clientv3/naming"
 //
 //		"google.golang.org/grpc"
-//		"google.golang.org/grpc/naming"
+//		"github.com/coreos/etcd/grpc/naming"
 //	)
 //
 // First, register new endpoint addresses for a service:
@@ -52,5 +52,4 @@
 //		r := &etcdnaming.GRPCResolver{Client: c}
 //		return r.Update(c.Ctx(), service, naming.Update{Op: naming.Add, Addr: addr}, clientv3.WithLease(lid))
 //	}
-//
 package naming
